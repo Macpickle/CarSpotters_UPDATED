@@ -1,0 +1,23 @@
+posts.map((post, index) => (
+                        //    <div className="col-md-5 m-1" key={index}>
+                        //        <Card>
+                        //            <Card.Img src={post.photo} />
+                        //            <Card.Body>
+                        //                <Card.Title>
+                        //                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        //                        <img src={post.content.post_image} alt="profile" style={{ width: '30px', height: '30px', borderRadius: '50%' }} />
+                        //                        <p>{post.username}</p>
+                        //                    </div>
+                        //                </Card.Title>
+                        //                <Card.Text>
+                        //                    {post.content.caption}
+                        //                </Card.Text>
+                        //                <Card.Footer>
+                        //                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        //                        <p><i className="fas fa-heart"></i> {post.content.likes}</p>
+                        //                        <p><i className="fas fa-comment"></i> {post.content.comments}</p>
+                        //                    </div>
+                        //                </Card.Footer>
+                        //            </Card.Body>
+                        //        </Card>
+                        //    </div>

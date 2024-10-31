@@ -1,0 +1,61 @@
+:root {
+    --sidenav-hover: rgb(0, 0, 0, 0.1);
+    --selected-icon: rgb(0, 0, 0, 0.5);
+    --background: rgb(255, 255, 255);
+}
+
+.sc-cfxfcM.hQSxZz:hover {
+    background-color: var(--sidenav-hover);
+    border-radius: 0.5rem;
+}  
+
+.loader-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%};
+  33% {background-size: 20% 10% ,20% 100%,20% 100%};
+  50% {background-size: 20% 100%,20% 10% ,20% 100%};
+  66% {background-size: 20% 100%,20% 100%,20% 10% };
+  100%{background-size: 20% 100%,20% 100%,20% 100%};
+}
+
+.row > .col.card-button {
+  max-width: fit-content;
+  border: none;
+  background: transparent;
+}
+
+.row > .col.card-button:hover {
+  transform: scale(1.05);
+}
+
+.row > button {
+  border: none;
+  background: transparent;
+}
+
+.row > button:hover {
+  transform: scale(1.01);
+}
+
+.row > .col.card-button input {
+  display: none;
+}
+
+.row > .col.card-button input:checked + label {
+  color: var(--selected-icon);
+}
+
+.unselectable {
+  user-select: none;
+}
+
+.input-group input:focus {
+  border-color: var(--selected-icon);
+  box-shadow: none;
+}
