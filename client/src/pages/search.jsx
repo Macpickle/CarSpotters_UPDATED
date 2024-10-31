@@ -28,7 +28,7 @@ function Search() {
             <div className="container d-flex w-75 h-75 justify-content-center align-items-center">
                 <div className="vstack gap-3 d-flex justify-content-center align-items-center">
                     <div className="input-group">
-                        <input type="text" className="form-control" placeholder="Search for cars..." data-mdb-input-init/>
+                        <input type="text" className="form-control" id = "search-car" placeholder="Search for cars..." data-mdb-input-init/>
                         <button className="btn btn-primary" type="button"><i className="fas fa-search"></i></button>
                     </div>
                     <h2 className="text-dark">Top Searches Today</h2>
@@ -38,7 +38,7 @@ function Search() {
                         ) : (
                             console.log(searches),
                             searches.map((search, index) => (
-                                <button className="btn btn-secondary" key={index}>
+                                <button className="btn btn-secondary" key={index} onClick={() => {document.getElementById("search-car").value = search.item}}>
                                     {search.item}
                                 </button>
                             ))
